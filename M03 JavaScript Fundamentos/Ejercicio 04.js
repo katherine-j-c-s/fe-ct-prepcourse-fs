@@ -7,7 +7,7 @@ function elevarAlCuadrado(num) {
    // Retorna el valor de "num" elevado al cuadrado.
    // Tu código:
    let number = Number(num);
-   const problem = number ** 2;
+   const problem = Math.pow(number,2);
    return problem
 }
 
@@ -15,7 +15,7 @@ function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
    // Tu código:
    let number = Number(num);
-   const problem = number ** 3;
+   const problem = Math.pow(number,3);
    return problem
 }
 
@@ -24,7 +24,7 @@ function elevar(num, exponent) {
    // Tu código:
    let number = Number(num);
    let exponent = Number(exponent)
-   const problem = number ** exponent;
+   const problem = Math.pow(number,exponent);
    return problem
 }
 
@@ -40,9 +40,7 @@ function redondearHaciaArriba(num) {
    // Redondea "num" hacia arriba y retórnalo.
    // Tu código:
    let numero = Number(num);
-   let numEntero = Math.trunc(numero);
-   numEntero++;
-   const proxEntero = numEntero;
+   let proxEntero = Math.ceil(numero);
    return proxEntero 
 }
 
