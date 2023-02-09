@@ -183,11 +183,9 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       porcentajeDescuento: 20,
    }
    let objeto = {objetoProducto};
-   let precioObjeto = objeto.precio;
-   let porcentajeObjeto = objeto.porcentajeDeDescuento; 
    objeto.calcularPrecioDescuento = function multipicar() {
-      precioTotalMult = precioObjeto * porcentajeObjeto;
-      precioFinal = precioObjeto - precioTotalMult;
+      precioTotalMult = this.precio * this.porcentajeDeDescuento;
+      precioFinal = this.precio - precioTotalMult;
       return precioFinal;
    }
 }
